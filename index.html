@@ -9,122 +9,179 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 </head>
 <body>
     <!-- Encabezado con nombre y navegación -->
     <header>
-        <h1>Juan Pablo Soperez</h1>
+        <div class="header-content">
+            <h1>Juan Pablo Soperez</h1>
+            <p class="subtitle">Desarrollador de Software</p>
+        </div>
         <nav>
-            <a href="#presentacion">Presentación</a>
-            <a href="#experiencia">Experiencia</a>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#educacion">Educación</a>
-            <a href="#contacto">Contacto</a>
+            <a href="#presentacion"><i class="fas fa-user"></i> Sobre Mí</a>
+            <a href="#experiencia"><i class="fas fa-briefcase"></i> Experiencia</a>
+            <a href="#habilidades"><i class="fas fa-code"></i> Habilidades</a>
+            <a href="#contacto"><i class="fas fa-envelope"></i> Contacto</a>
         </nav>
     </header>
 
     <!-- Sección principal de presentación -->
-    <section id="presentacion">
-        <h2>Sobre Mí</h2>
-        <img src="assets/images/profile.jpg" alt="Foto de perfil de Juan Pablo Soperez, desarrollador de software" class="profile-image" />
-        <p>Soy Juan Pablo, estudiante de tercer año de la Tecnicatura Superior en Desarrollo de Software, altamente dedicado y apasionado por la tecnología. Actualmente me desempeño como GeneXus Developer en GLM S.A., donde aplico y sigo ampliando mis conocimientos en el desarrollo de software.</p>
-        <p>En los últimos dos años, he trabajado extensivamente con Python, desarrollando desde scripts para la automatización de tareas hasta aplicaciones de escritorio interactivas. También poseo experiencia en análisis de datos y visualización utilizando librerías como pandas, matplotlib y seaborn.</p>
+    <section id="presentacion" class="hero">
+        <div class="hero-content">
+            <img src="assets/images/profile.jpg" alt="Foto de perfil de Juan Pablo Soperez" class="profile-image" />
+            <div class="hero-text">
+                <h2>¡Hola! 👋</h2>
+                <p>Desarrollador de Software especializado en GeneXus y Python, con experiencia en desarrollo de aplicaciones empresariales, sistemas de escritorio y análisis de datos.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <i class="fas fa-code"></i>
+                        <span>1+</span>
+                        <p>Años de Experiencia</p>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-laptop-code"></i>
+                        <span>5+</span>
+                        <p>Proyectos Completados</p>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>3</span>
+                        <p>3er año de Tecnicatura</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Sección de experiencia -->
     <section id="experiencia">
         <h2>Experiencia Laboral</h2>
-        <div class="experience-list">
-            <article class="experience-item">
-                <h3>GeneXus Developer - GLM S.A</h3>
-                <p class="experience-date">Marzo 2025 - Actualidad</p>
-                <p>Desarrollo encargado de mantener y evolucionar sistemas empresariales en GeneXus 10 EVO 3 con PXTools, gestionando proyectos para cooperativas y empresas de servicios.</p>
-            </article>
-            <article class="experience-item">
-                <h3>GeneXus Developer - Neuronic SRL</h3>
-                <p class="experience-date">Febrero 2024 - Marzo 2025</p>
-                <p>Desarrollo de sistema ERP en AS400 para FRECICAR, utilizando GeneXus 18 U9. Enfocado en la creación de webapps y soluciones empresariales, contribuyendo a la optimización de procesos.</p>
-            </article>
-            <article class="experience-item">
-                <h3>Full Stack Developer – Proyecto Personal</h3>
-                <p class="experience-date">Noviembre 2024 - Actualidad</p>
-                <p>Desarrollo de un sistema SaaS para la gestión de stock, ventas y productos. Enfocado en brindar soluciones a pequeñas empresas, con funcionalidades como control de inventario, administración de listas de precios y registro de operaciones de venta.</p>
-            </article>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>GeneXus Developer</h3>
+                    <p class="company">GLM S.A</p>
+                    <p class="date">Marzo 2025 - Actualidad</p>
+                    <p>Desarrollo y mantenimiento de sistemas empresariales en GeneXus 10 EVO 3 con PXTools.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>GeneXus Developer</h3>
+                    <p class="company">Neuronic SRL</p>
+                    <p class="date">Febrero 2024 - Marzo 2025</p>
+                    <p>Desarrollo de sistema ERP en AS400 utilizando GeneXus 18 U9.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Full Stack Developer</h3>
+                    <p class="company">Proyecto Personal</p>
+                    <p class="date">Noviembre 2024 - Actualidad</p>
+                    <p>Desarrollo de sistema SaaS para gestión de stock y ventas.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Sección de habilidades -->
     <section id="habilidades">
-        <h2>Habilidades Técnicas</h2>
+        <h2>Stack Tecnológico</h2>
         <div class="skills-container">
             <div class="skills-category">
-                <h3><i class="fas fa-code"></i> GeneXus</h3>
+                <h3><i class="fas fa-code"></i> Desarrollo</h3>
                 <ul class="skills-list">
-                    <li><i class="fas fa-globe"></i> Desarrollo de Webapps con WorkWithPlus</li>
-                    <li><i class="fas fa-tools"></i> K2B tools</li>
-                    <li><i class="fas fa-cube"></i> GeneXus 10 EVO 3</li>
-                    <li><i class="fas fa-cubes"></i> GeneXus 18 U9</li>
+                    <li><i class="fab fa-python"></i> Python</li>
+                    <li><i class="fas fa-database"></i> SQL</li>
+                    <li><i class="fab fa-js"></i> JavaScript</li>
+                    <li><i class="fab fa-react"></i> React</li>
                 </ul>
             </div>
             <div class="skills-category">
-                <h3><i class="fab fa-python"></i> Python</h3>
+                <h3><i class="fas fa-cubes"></i> GeneXus</h3>
                 <ul class="skills-list">
-                    <li><i class="fas fa-desktop"></i> Desktop apps con Flet</li>
-                    <li><i class="fas fa-chart-line"></i> Análisis de Datos (Pandas, Matplotlib)</li>
-                    <li><i class="fas fa-chart-bar"></i> Numpy, Seaborn</li>
-                    <li><i class="fas fa-server"></i> APIs (FastAPI, Flask)</li>
+                    <li><i class="fas fa-globe"></i> WorkWithPlus+</li>
+                    <li><i class="fas fa-tools"></i> K2B Tools</li>
+                    <li><i class="fas fa-cube"></i> PXTools</li>
+                    <li><i class="fas fa-cubes"></i> GAM</li>
                 </ul>
             </div>
             <div class="skills-category">
-                <h3><i class="fas fa-database"></i> Bases de Datos</h3>
+                <h3><i class="fas fa-tools"></i> Herramientas</h3>
                 <ul class="skills-list">
-                    <li><i class="fas fa-database"></i> SQL (DBVisualzer, MySQL)</li>
-                    <li><i class="fas fa-server"></i> SQLServer</li>
-                    <li><i class="fas fa-database"></i> SQLite</li>
-                </ul>
-            </div>
-            <div class="skills-category">
-                <h3><i class="fas fa-tools"></i> Otras Habilidades</h3>
-                <ul class="skills-list">
-                    <li><i class="fab fa-github"></i> Git-GitHub</li>
+                    <li><i class="fab fa-git-alt"></i> Git</li>
+                    <li><i class="fas fa-chart-line"></i> Data Analysis</li>
+                    <li><i class="fas fa-server"></i> APIs</li>
                     <li><i class="fas fa-file-excel"></i> Excel</li>
-                    <li><i class="fas fa-layer-group"></i> Desarrollo Full Stack</li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <!-- Sección de educación -->
-    <section id="educacion">
-        <h2>Educación</h2>
-        <div class="education-list">
-            <article class="education-item">
-                <h3>Técnico Superior en Desarrollo de Software</h3>
-                <p class="education-institution">Instituto Tecnológico 'El Molino'</p>
-                <p class="education-date">2022 - 2025</p>
-            </article>
-            <article class="education-item">
-                <h3>Técnico Químico</h3>
-                <p class="education-institution">Escuela Técnica y Profesional Nro. 455 'General Don José de San Martín'</p>
-                <p class="education-date">2016 - 2022</p>
-            </article>
+    <!-- Sección de lenguajes -->
+    <section id="lenguajes">
+        <h2>Idiomas</h2>
+        <div class="languages-container">
+            <div class="language-item">
+                <i class="fas fa-language"></i>
+                <div class="language-info">
+                    <h3>Español</h3>
+                    <p>Nativo</p>
+                </div>
+            </div>
+            <div class="language-item">
+                <i class="fas fa-language"></i>
+                <div class="language-info">
+                    <h3>Inglés</h3>
+                    <p>Avanzado</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Sección de contacto -->
     <section id="contacto">
         <h2>Contacto</h2>
-        <p>¡No dudes en contactarme para oportunidades profesionales o colaboraciones!</p>
-        <div class="contact-info">
-            <p><i class="fas fa-phone"></i> <strong>Teléfono:</strong> +54 3496400943</p>
-            <p><i class="fas fa-envelope"></i> <strong>Email:</strong> juanpsoperez@gmail.com</p>
-            <p><i class="fas fa-map-marker-alt"></i> <strong>Ubicación:</strong> Esperanza, Santa Fe, Argentina</p>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Teléfono</h3>
+                        <p>+54 3496400943</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>juanpsoperez@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Ubicación</h3>
+                        <p>Esperanza, Santa Fe</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="contact-links">
-            <a href="https://linkedin.com/in/juanpablosoperez" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            <a href="mailto:juanpsoperez@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+        <div class="social-links-container">
+            <div class="social-links">
+                <a href="https://linkedin.com/in/juanpablosoperez" target="_blank" rel="noopener noreferrer" class="social-button">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="mailto:juanpsoperez@gmail.com" class="social-button">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+            </div>
         </div>
     </section>
 
